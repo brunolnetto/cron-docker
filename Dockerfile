@@ -18,4 +18,6 @@ RUN crontab /etc/cron.d/cron-config
 RUN touch /var/log/cron.log
 
 # Run the command on container startup
-CMD cron
+CMD echo "starting" && echo "continuing" && (cron) \
+&& echo "tailing..." && : >> /var/log/cron.log && tail -f /var/log/cron.log
+
