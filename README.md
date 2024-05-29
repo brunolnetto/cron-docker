@@ -1,6 +1,6 @@
 # cron-docker
 
-Cron job is not working properly.
+Cron job does not output 'Hello world' every minute.
 
 ## Run
 
