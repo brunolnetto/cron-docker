@@ -6,11 +6,11 @@ services:
       context: .
       dockerfile: Dockerfile
     networks:
-      - CNPJ_net
+      - cron_net
     restart: unless-stopped
 
 networks:
-  CNPJ_net:
+  cron_net:
 
 volumes:
   postgres_data:
