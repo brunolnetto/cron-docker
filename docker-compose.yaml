@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   cron:
+    container_name: cron-job
     build: 
       context: .
       dockerfile: Dockerfile
